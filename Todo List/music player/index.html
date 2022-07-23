@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Music Player</title>
+    <style>
+        .container {
+            border: 1px solid brown;
+            width: 500px;
+            height: 200px;
+            margin: auto;
+        }
+        .current-song {
+            outline: 1px solid;
+            width: 100%;
+            overflow: hidden;
+        }
+        .title {
+            animation-name: playing;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transform: translateX(-180px)
+        }
+        @keyframes playing {
+            0% {transform: translateX(300px);};
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="current-song"><p class="title">Lenny Leblanc - One desire</p></div>
+        <div class="deco">
+            <img src="">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

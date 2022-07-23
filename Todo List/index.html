@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+            input  {
+                display: block;
+                margin: 5px 0;
+            }
+            .place {
+                background-color: grey;
+                color: #fff;
+                border: 0;
+                padding: 6px;
+                border-radius: 5px;
+            }
+            .del {
+                background-color: blueviolet;
+                color: #fff;
+                margin-left: 30px;
+                padding: 0 5px;
+                border-radius: 5px;
+            }
+            li {
+                margin: 5px 0;
+            }
+            .placeholder.inactive {
+                display: none;
+            }
+    </style>
+</head>
+<body>
+
+     <div class="container">
+        <input class="input" type="text" placeholder="Add task">
+        <input class="place" type="text" value="Add task">
+        <ol class="tasks"> <span class="placeholder">No tasks yet</span></ol>
+     </div>    
+
+    <script src="app.js"></script>
+</body>
+</html>

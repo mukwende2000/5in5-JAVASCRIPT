@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hard-container,
+.easy-words-to-type,
+.output {
+    width: 700px;
+    height: 300px;
+    border-radius: 3px;
+    
+    overflow: hidden;
+    outline: 1px solid red;
+    padding: 10px;
+}
+
+.output {
+    margin-top: 10px;
+}
+
+.hard-words-to-type {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 290px;
+    padding: 10px;
+    word-spacing: 10px;
+}
+.hard-words-to-type:hover {
+    margin-top: -500px;
+}
+
+#easyInput {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.easy {
+    position: relative;
+}
+.results {
+    background-image: linear-gradient(to left, blueviolet, rgb(12, 184, 12));
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.results span:last-child {
+    color: red;
+}
+.results span:nth-of-type(3) {
+    color: greenyellow;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid lightblue;
+    color: #fff;
+    border-radius: 5px;
+    width: 300px;
+    margin: 5px 0;
+    padding: 10px;   
+}
+
+.start {
+    background-image: linear-gradient(to left, blueviolet, green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.start .container {
+    font-size: 20px;
+    border: 1px solid red;
+    color: #fff;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+}
